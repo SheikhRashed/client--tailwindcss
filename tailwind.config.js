@@ -12,6 +12,9 @@ module.exports = {
         'primary-regular': 'Satoshi-Regular',
         'primary-medium': 'Satoshi-Medium',
         'primary-bold': 'Satoshi-Bold',
+        'secondary-regular': 'Urban-Regular',
+        'secondary-sb': 'Urban-SemiBold',
+        'secondary-bold': 'Urban-Bold',
         logo: 'Arial',
       },
       fontSize: {

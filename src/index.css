@@ -20,6 +20,26 @@
   src: url('../src/assets/fonts/arial.ttf');
 }
 
+@font-face {
+  font-family: 'Arial';
+  src: url('../src/assets/fonts/arial.ttf');
+}
+
+@font-face {
+  font-family: 'Urban-Regular';
+  src: url('../src/assets/fonts/Urbanist-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Urban-SemiBold';
+  src: url('../src/assets/fonts/Urbanist-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'Urban-Bold';
+  src: url('../src/assets/fonts/Urbanist-Bold.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -40,6 +60,6 @@
 
 @layer utilities {
   .container {
-    @apply max-w-screen-sm  md:max-w-screen-2xl mx-auto px-4;
+    @apply max-w-screen-md  md:max-w-screen-2xl mx-auto px-4;
   }
 }
