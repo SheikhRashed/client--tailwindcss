@@ -96,7 +96,7 @@
                 <!-- right bottom start  -->
                 <div class="mt-10">
                     <h2 class="text-white font-secondary-regular uppercase text-3xl leading-8 mb-6 ">Links</h2>
-                    <ul class="flex items-center flex-wrap space-x-2 justify-center sm:space-x-4">
+                    <ul class="flex items-center flex-wrap space-x-2 justify-center sm:justify-start sm:space-x-4">
                         <li><a href="#" class="text-xs uppercase text-white ">About us </a></li>
                         <li><a href="#" class="text-xs uppercase text-white ">Benefits</a></li>
                         <li><a href="#" class="text-xs uppercase text-white ">jobs</a></li>
