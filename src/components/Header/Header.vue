@@ -1,5 +1,5 @@
 <template lang="">
-    <header class="relative  bg-white pt-8 pb-16 " :class="{ 'scrolled-nav ': scrolledNav}">
+    <header class="relative  bg-white pt-8 pb-16  z-50 " :class="{ 'scrolled-nav ': scrolledNav}">
         <!-- Container  -->
         <nav class="container flex justify-between items-center">
             <!-- left content   -->
@@ -52,6 +52,9 @@
                     </li>
                     <li>
                         <a href="#" class="text-menu uppercase font-primary-medium">Resources</a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-menu uppercase font-primary-medium">enterprice</a>
                     </li>
                     <li class="flex justify-center space-x-4">
                       <a href="#" class="btn btn-outline border-white text-black">Login</a>
