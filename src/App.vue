@@ -1,6 +1,9 @@
 <template>
   <Header />
+ 
+  <!-- footer section start  -->
   <Footer />
+  <!-- footer section  end -->
 </template>
 
 <script>

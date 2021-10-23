@@ -112,10 +112,7 @@ import Sidebar from '../Sidebar/Sidebar.vue';
     top: 0;
     width: 100%;
     padding-bottom: 32px;
-    background-color: rgba(0, 0, 0, 0.603);
-    .text-brandLogo { 
-      color: #fff;
-    }
+    box-shadow: 0px 12px 40px 0px #00223312;
   }
 
   .mobile-nav-enter-active,
