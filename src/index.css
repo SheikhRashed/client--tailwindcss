@@ -1,3 +1,45 @@
+/* Import Fonts  */
+
+@font-face {
+  font-family: 'Satoshi-Regular';
+  src: url('../src/assets/fonts/Satoshi-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Satoshi-Medium';
+  src: url('../src/assets/fonts/Satoshi-Medium.otf');
+}
+
+@font-face {
+  font-family: 'Satoshi-Bold';
+  src: url('../src/assets/fonts/Satoshi-Bold.otf');
+}
+
+@font-face {
+  font-family: 'Arial';
+  src: url('../src/assets/fonts/arial.ttf');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply inline-block
+        py-2
+        px-8  uppercase  font-primary-medium border-2 border-transparent text-center whitespace-nowrap overflow-hidden;
+  }
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+  .btn-outline {
+    @apply bg-transparent text-primary  border-primary;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply max-w-screen-sm  md:max-w-screen-2xl mx-auto px-4;
+  }
+}
