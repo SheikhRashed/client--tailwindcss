@@ -1,5 +1,5 @@
 <template lang="">
-    <header class="relative  bg-white mb-12 mt-6 lg:mb-24 lg:mt-8" :class="{ 'scrolled-nav': scrollPosition}">
+    <header class="relative  bg-white pt-8 pb-16 " :class="{ 'scrolled-nav ': scrolledNav}">
         <!-- Container  -->
         <nav class="container flex justify-between items-center">
             <!-- left content   -->
@@ -37,7 +37,7 @@
                 </a>
             </div>
             <transition name="mobile-nav" class="bg-primary py-12  w-ful">
-                  <ul class=" xl:flex flex-col items-center space-y-12 absolute z-10 top-24 left-0 text-center w-full" v-show="mobileNav">
+                  <ul class=" xl:flex flex-col items-center space-y-8 md:space-y-12 absolute z-10 top-28 left-0 text-center w-full" v-show="mobileNav">
                     <li>
                         <a href="#" class="text-menu uppercase font-primary-medium">About us</a>
                     </li>
@@ -62,7 +62,6 @@
             </transition>
         </nav>
     </header>
-
 </template>
 <script>
 
@@ -70,22 +69,64 @@ import Sidebar from '../Sidebar/Sidebar.vue';
 
     export default {
         name: "Header",
-        // components: { 
-        //   Sidebar
-        // }
         data() { 
           return { 
-            scrollPosition: null,
-            mobile: false,
+            scrolledNav: null,
+            mobile: true,
             mobileNav: false,
             windowWidth: null,
+          }
+        },
+        created() { 
+          window.addEventListener('resize',this.checkScreen);
+          this.checkScreen();
+        },
+        mounted() { 
+          window.addEventListener('scroll', this.updateScroll);
+        },
+        methods: { 
+          toggleMobileNav() {
+              this.mobileNav = !this.mobileNav
+          },
+          checkScreen() { 
+            this.windowWidth = window.innerWidth;
+            if(this.windowWidth <= 1280) { 
+              this.mobile = true;
+              return;
+            }
+            this.mobile = false;
+            this.mobileNav = false;
+            return;
+          },
+          updateScroll() { 
+              const scrollPosition = window.scrollY;
+              scrollPosition > 50 ? this.scrolledNav = true : this.scrolledNav = false;
           }
         }
 
     };
 </script>
 <style lang="scss" scoped>
+  .scrolled-nav { 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-bottom: 32px;
+    background-color: rgba(0, 0, 0, 0.603);
+    .text-brandLogo { 
+      color: #fff;
+    }
+  }
 
-
-
+  .mobile-nav-enter-active,
+  .mobile-nav-leave-active { 
+    transition: 0.3s ease all;
+  }
+  .mobile-nav-enter-from,
+  .mobile-nav-leave-to { 
+    transform: translateY(-10px);
+  }
+  .mobile-nav-enter-to { 
+    transform: translateY(0px);
+  }
 </style>
