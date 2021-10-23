@@ -7,6 +7,9 @@
       <Banner/>
   <!-- Banner Section End  -->
 
+  <!-- Service Section Start  -->
+    <Service/>
+  <!-- Service Section End  -->
  
   <!-- Team Section Start  -->
   <Team/>
@@ -24,6 +27,7 @@
 <script>
 import Header from './components/Header/Header.vue';
 import Banner from './components/Banner/Banner.vue';
+import Service from './components/Services/Service.vue';
 import About from './pages/About/About.vue';
 import Connect from './components/Connects/Connect.vue';
 import Team from './components/Teams/Team.vue';
@@ -33,6 +37,7 @@ export default {
   components: {
     Header,
     Banner,
+    Service,
     Footer,
     About,
     Team,
