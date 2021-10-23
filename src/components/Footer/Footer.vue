@@ -86,7 +86,7 @@
                     <!-- newsletter from start  -->
                     <form action="#">
                         <div class="relative w-full lg:w-6/12 xl:w-full flex flex-col sm:flex-row items-center mt-6">
-                            <input type="text" placeholder="Enter Email" class="bg-transparent border-b border-opacity-80  w-full focus:outline-none py-2 pb-4 sm:pb-0  text-white placeholder-gray-500 mb-6 sm:mb-0 text-center sm:text-left">
+                            <input type="text" placeholder="Enter Email" class="bg-transparent border-b border-opacity-80  w-full focus:outline-none py-2 pb-4 sm:pb-4  text-white placeholder-gray-500 mb-6 sm:mb-0 text-center sm:text-left">
                             <button class="btn btn-primary sm:absolute bottom-0 right-0">Subsribe to newsletter</button>
                         </div>
                     </form>
