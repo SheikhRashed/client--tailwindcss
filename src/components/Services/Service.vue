@@ -2,9 +2,9 @@
     <div class="relative py-24">
         <div class="container ">
         <!-- Service Wrapper Start  -->
-            <div class="flex items-center" >
+            <div class="flex flex-col  lg:flex-row items-center" >
             <!-- left start  -->
-            <div>
+            <div class=" mb-20 " >
                 <!-- Service Info start  -->
                 <h6 class="text-2xl lg:text-5xl leading-none lg:leading-10 mb-5 font-secondary-regular capitalize">You need transparency</h6>
                 <h2 class=" text-4xl lg:text-6xl leading-none mb-3 font-primary-regular uppercase font-bold ">We've got you covered</h2>
