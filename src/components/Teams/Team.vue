@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="relative py-24 ">
+    <div class="relative py-16 lg:py-24 ">
         <!-- team wrapper start   -->
         <div class="container">
             <!-- Top start  -->

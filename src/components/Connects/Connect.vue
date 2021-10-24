@@ -1,5 +1,5 @@
 <template >
-    <div class="relative py-24 ">
+    <div class="relative py-16 lg:py-24 ">
     <!-- Connect Wrapper  -->
       <div class="container">
         <!-- top start   -->

@@ -1,14 +1,14 @@
 <template lang="">
-    <div class="relative py-24">
+    <div class="relative py-16 lg:py-24">
         <div class="container ">
         <!-- Service Wrapper Start  -->
-            <div class="flex flex-col  lg:flex-row items-center" >
+            <div class="flex flex-col  xl:flex-row items-center" >
             <!-- left start  -->
-            <div class=" mb-20iyqas " >
+            <div class=" mb-20 lg:mb-0  xl:mr-12 " >
                 <!-- Service Info start  -->
                 <h6 class="text-2xl lg:text-5xl leading-none lg:leading-10 mb-5 font-secondary-regular capitalize">You need transparency</h6>
-                <h2 class=" text-4xl lg:text-6xl leading-none mb-3 font-primary-regular uppercase font-bold ">We've got you covered</h2>
-                <p class="font-primary-regular text-lg lg:text-xl leading-none lg:leading-7 capitalize mb-8 lg:mb-16 " >in publishing and grapich design, lorem ipsum is a placeholder text commonly used to demonstrate</p>
+                <h2 class=" text-4xl lg:text-6xl leading-none mb-3 font-primary-regular uppercase  ">We've got you covered</h2>
+                <p class="font-secondary-regular text-lg lg:text-xl leading-none lg:leading-7 capitalize mb-8 lg:mb-16 " >in publishing and grapich design, lorem ipsum is a placeholder text commonly used to demonstrate</p>
                 <!-- Service Info End  -->
 
                 <!-- Accordion start  -->
@@ -65,7 +65,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class=" text-xl leading-normal md:text-3xl md:leading-7 text-primary uppercase font-primary-regular font-bold ">Why We Exist ? </h6>
+                            <h6 class=" text-xl leading-normal md:text-3xl md:leading-7 text-primary uppercase font-primary-regular  ">Why We Exist ? </h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-primary text-2xl "></i>
                         </div>
@@ -87,7 +87,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-sky uppercase font-primary-regular font-bold"> Our Governance Practice </h6>
+                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-sky uppercase font-primary-regular "> Our Governance Practice </h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-sky text-2xl "></i>
                         </div>
@@ -109,7 +109,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dpaste uppercase font-primary-regular font-bold">Serving the community</h6>
+                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dpaste uppercase font-primary-regular ">Serving the community</h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-dpaste text-2xl "></i>
                         </div>
@@ -131,7 +131,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dblue uppercase font-primary-regular font-bold"> Our Values </h6>
+                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dblue uppercase font-primary-regular "> Our Values </h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-dblue text-2xl "></i>
                         </div>
@@ -154,15 +154,67 @@
             <!-- left end  -->
 
             <!-- right start  -->
-            <div>
+            <div class="mt-2 lg:mt-28 xl:mt-0" >
+
                 <!-- innovation chart Goes Here   -->
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat explicabo officia quidem ullam eos eum nostrum, voluptates praesentium, iste nesciunt illo consequuntur eius nobis architecto possimus cupiditate iure dolores.</p>
+                    <div class="relative">
+                        <!-- Parent Circle Div Start -->
+                        <div class=" relative bg-white w-lg h-lg sm:w-xl sm:h-xl md:w-2xl md:h-2xl  lg:w-3xl lg:h-3xl flex justify-between  items-center rounded-full transform rotate-90">
+                            <h2 class="transform -rotate-90 text-2xl sm:text-3xl  leading-normal font-primary-regular  uppercase tracking-widest   -mx-24 sm:-mx-36 md:-mx-36 lg:-mx-24">Compliance</h2>
+                            <!-- blue border start  -->
+                            <div class=" absolute top-1/2 left-1/2  rounded-full w-0 h-0 md:w-2xl  md:h-2xl  lg:w-2xl lg:h-2xl  border-2 border-primary transform -translate-x-1/2 -translate-y-1/2  bg-white " >
+                                <!-- service start -->
+                                <div class="bg-spaste w-md h-md  sm:w-xl sm:h-xl rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  -rotate-90 flex flex-col justify-between items-center">
+                                <h2 class=" text-sm  md:text-lg leading-none md:leading-5  text-white uppercase font-secondary-bold mt-3"> Platform </h2>
+                                    <!-- white border start  -->
+                                    <div class="bg-white w-0 lg:w-lg h-0 lg:h-lg rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " >
+                                        <!-- our services start  -->
+                                        <div class=" bg-footer   w-xs h-xs sm:w-lg sm:h-lg rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  -rotate-90 flex flex-col justify-between items-center "> 
+                                            <h2 class="text-white uppercase text-sm leading-normal font-secondary-bold mt-1 " >Digital</h2>
+                                        <!-- white border start  -->
+                                        <div class=" bg-white lg:w-sm lg:h-sm rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                                            <!-- main service start  -->
+                                            <div class="bg-paste w-xxs h-xxs sm:w-md sm:h-md rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  rotate-90 flex flex-col justify-between items-center " >
+                                                <h2 class="text-white uppercase text-md md:text-xl leading-none font-secondary-bold mt-6  ">Enterprice</h2>
+
+                                                <!-- Border  -->
+                                                <div class="inline-block w-full bg-white h-4"></div>
+
+                                                <!-- logo wrapper start  -->
+                                                <div class="bg-white w-0 h-0 sm:w-xxs sm:h-xxs rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
+                                                    <!-- Logo start  -->
+                                                    <div class="bg-primary w-xxxxs h-xxxxs  sm:w-xxxs sm:h-xxxs rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" >
+                                                        <!-- <img src="" alt=""> -->
+                                                    </div>
+                                                    <!-- Logo end  -->
+                                                </div>
+                                                <!-- logo wrapper end  -->
+                                                <h2 class="text-white uppercase text-md md:text-xl leading-none font-secondary-bold mb-6">Marketing</h2>
+                                            </div>
+                                            <!-- main service end  -->
+                                            </div>
+                                        <!-- white border end  -->
+                                         <h2 class="text-white uppercase text-sm leading-normal font-secondary-bold mt-1 ">Offline</h2>
+                                        </div>
+                                        <!-- our services end  -->
+                                    </div>
+                                    <!-- white border end  -->
+                                    <h2 class=" text-sm  md:text-lg leading-none md:leading-5  text-white uppercase font-secondary-bold  mb-5" >Professional Services</h2>
+                                </div>
+                                <!-- service end  -->
+                            </div>
+                            <!-- blue border end  -->
+                            <h2 class="transform -rotate-90 text-2xl sm:text-3xl  leading-normal font-primary-regular  uppercase tracking-widest -mx-24  sm:-mx-36 lg:-mx-24 ">Innovation</h2>
+                        </div>
+                        <!-- Parent Circle Div End  -->
+                    </div>
                 <!-- innovation chart Goes End   -->
+
             </div>
             <!-- right end  -->
             </div>
         <!-- Service Wrapper End  -->
-        <div class="mt-24" >
+        <div class=" mt-16 md:mt-24" >
         <a href="#" class="flex justify-center  items-center text-xl md:text-2xl leading-6 capitalize text-gray-800"><span class="mt-1 mr-4"><i class="far fa-arrow-alt-circle-right"></i></span> See full list of activities and top skills </a>
         </div>
         </div>
