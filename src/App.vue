@@ -7,6 +7,9 @@
       <Banner/>
   <!-- Banner Section End  -->
 
+  <!-- Our Story  -->
+  <our-story />
+
   <!-- Service Section Start  -->
     <Service/>
   <!-- Service Section End  -->
@@ -25,25 +28,28 @@
 </template>
 
 <script>
-import Header from './components/Header/Header.vue';
-import Banner from './components/Banner/Banner.vue';
-import Service from './components/Services/Service.vue';
-import About from './pages/About/About.vue';
-import Connect from './components/Connects/Connect.vue';
-import Team from './components/Teams/Team.vue';
-import Footer from './components/Footer/Footer.vue';
-export default {
-  name: 'App',
-  components: {
-    Header,
-    Banner,
-    Service,
-    Footer,
-    About,
-    Team,
-    Connect,
-  },
-};
+  import Header from './components/Header/Header.vue';
+  import Banner from './components/Banner/Banner.vue';
+  import Service from './components/Services/Service.vue';
+  import About from './pages/About/About.vue';
+  import Connect from './components/Connects/Connect.vue';
+  import Team from './components/Teams/Team.vue';
+  import Footer from './components/Footer/Footer.vue';
+  import OurStory from './components/OurStory.vue';
+  
+  export default {
+    name: 'App',
+    components: {
+      Header,
+      Banner,
+      Service,
+      Footer,
+      About,
+      Team,
+      Connect,
+      OurStory,
+    },
+  };
 </script>
 
 <style></style>
