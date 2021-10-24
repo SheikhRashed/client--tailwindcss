@@ -1,7 +1,8 @@
 <template lang="">
     <div class="relative py-24">
+        <div class="container ">
         <!-- Service Wrapper Start  -->
-        <div class="container">
+            <div class="flex items-center" >
             <!-- left start  -->
             <div>
                 <!-- Service Info start  -->
@@ -155,11 +156,16 @@
             <!-- right start  -->
             <div>
                 <!-- innovation chart Goes Here   -->
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In placeat explicabo officia quidem ullam eos eum nostrum, voluptates praesentium, iste nesciunt illo consequuntur eius nobis architecto possimus cupiditate iure dolores.</p>
                 <!-- innovation chart Goes End   -->
             </div>
             <!-- right end  -->
-        </div>
+            </div>
         <!-- Service Wrapper End  -->
+        <div class="mt-24" >
+        <a href="#" class="flex justify-center  items-center text-xl md:text-2xl leading-6 capitalize text-gray-800"><span class="mt-1 mr-4"><i class="far fa-arrow-alt-circle-right"></i></span> See full list of activities and top skills </a>
+        </div>
+        </div>
     </div>
 </template>
 <script>
