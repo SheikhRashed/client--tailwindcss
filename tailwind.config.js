@@ -8,6 +8,9 @@ module.exports = {
         primary: '#8F98FF',
         footer: '#24243C',
         paste: '#1EC2CB',
+        sky: '#7DD6F6',
+        dpaste: '#4ADEDE',
+        dblue: '#1AA7EC',
       },
 
       fontFamily: {
