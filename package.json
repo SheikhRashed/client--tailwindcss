@@ -9,6 +9,7 @@
   "dependencies": {
     "@dafcoe/vue-collapsible-panel": "^0.2.0",
     "sass": "^1.43.3",
+    "swiper": "^7.0.9",
     "vue": "^3.2.16",
     "vue-router": "4"
   },
