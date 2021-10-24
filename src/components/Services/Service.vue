@@ -4,7 +4,7 @@
         <!-- Service Wrapper Start  -->
             <div class="flex flex-col  lg:flex-row items-center" >
             <!-- left start  -->
-            <div class=" mb-20 " >
+            <div class=" mb-20iyqas " >
                 <!-- Service Info start  -->
                 <h6 class="text-2xl lg:text-5xl leading-none lg:leading-10 mb-5 font-secondary-regular capitalize">You need transparency</h6>
                 <h2 class=" text-4xl lg:text-6xl leading-none mb-3 font-primary-regular uppercase font-bold ">We've got you covered</h2>
@@ -65,7 +65,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class="text-3xl leading-7 text-primary uppercase font-primary-regular font-bold ">Why We Exist ? </h6>
+                            <h6 class=" text-xl leading-normal md:text-3xl md:leading-7 text-primary uppercase font-primary-regular font-bold ">Why We Exist ? </h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-primary text-2xl "></i>
                         </div>
@@ -87,7 +87,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class="text-3xl leading-7 text-sky uppercase font-primary-regular font-bold"> Our Governance Practice </h6>
+                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-sky uppercase font-primary-regular font-bold"> Our Governance Practice </h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-sky text-2xl "></i>
                         </div>
@@ -109,7 +109,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class="text-3xl leading-7 text-dpaste uppercase font-primary-regular font-bold">Serving the community</h6>
+                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dpaste uppercase font-primary-regular font-bold">Serving the community</h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-dpaste text-2xl "></i>
                         </div>
@@ -131,7 +131,7 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
                             <!-- Accordion Title  -->
-                            <h6 class="text-3xl leading-7 text-dblue uppercase font-primary-regular font-bold"> Our Values </h6>
+                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dblue uppercase font-primary-regular font-bold"> Our Values </h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-dblue text-2xl "></i>
                         </div>
