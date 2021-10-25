@@ -12,142 +12,26 @@
                 <!-- Service Info End  -->
 
                 <!-- Accordion start  -->
-                <!-- <vue-collapsible-panel-group>
-                    <vue-collapsible-panel>
-                        <template #title >
-                            Why We Exist ?
-                        </template>
-                        <template #content>
-                          <p class="pb-32">
-                            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
-                        placeholder before final copy is available.
-                          </p>
-                        </template>
-                    </vue-collapsible-panel>
-                    <vue-collapsible-panel :expanded="false">
-                        <template #title>
-                            Our Governance Practice
-                        </template>
-                        <template #content>
-                          <p class="pb-32">
-                            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
-                        placeholder before final copy is available.
-                          </p>
-                        </template>
-                    </vue-collapsible-panel>
-                    <vue-collapsible-panel :expanded="false">
-                        <template #title>
-                            Serving The Community
-                        </template>
-                        <template #content>
-                        <p class="pb-32">
-                            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
-                        placeholder before final copy is available.
-                          </p>
-                        </template>
-                    </vue-collapsible-panel>
-                    <vue-collapsible-panel :expanded="false">
-                        <template #title>
-                            Our Values
-                        </template>
-                        <template #content>
-                          <p class="pb-32">
-                            In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a
-                            placeholder before final copy is available.
-                          </p>
-                        </template>
-                    </vue-collapsible-panel>
-                </vue-collapsible-panel-group> -->
-
                 <div>
                     <!-- Accordion Pannel Start  -->
-                    <div class="relative overflow-hidden" >
+                    <div class="relative overflow-hidden" v-for="item in accordionList" :key="item.id">
                         <!-- Accordion Header Start  -->
-                        <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
+                        <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" @click.prevent="toggleAccordion(item.id)">
                             <!-- Accordion Title  -->
-                            <h6 class=" text-xl leading-normal md:text-3xl md:leading-7 text-primary uppercase font-primary-regular  ">Why We Exist ? </h6>
+                            <h6 class=" text-xl leading-normal md:text-3xl md:leading-7 text-primary uppercase font-primary-regular ">{{ item.title }} </h6>
                             <!-- Accordion Icon  -->
                             <i class="fas fa-angle-down text-primary text-2xl "></i>
                         </div>
                         <!-- Accordion Header End  -->
                         <!-- Accordion Body Start  -->
-                        <div class="pb-12 border-b ">
+                        <div class="pb-12 border-b" :class="activeAccordion == item.id ? 'block' : 'hidden'">
                             <!-- body content  -->
                             <p class=" text-lg leading-normal capitalize mt-4 ">
-                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                demonstrate the visual form of a document or a typeface without relying on meaningful
-                                content. Lorem ipsum may be used as a placeholder before final copy is available. 
+                              {{ item.details }}
                             </p>
                         </div>
                         <!-- Accordion Body End  -->
                     </div>
-                    <!-- Accordion Pannel End  -->
-                    <!-- Accordion Pannel Start  -->
-                    <div class="relative overflow-hidden" >
-                        <!-- Accordion Header Start  -->
-                        <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
-                            <!-- Accordion Title  -->
-                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-sky uppercase font-primary-regular "> Our Governance Practice </h6>
-                            <!-- Accordion Icon  -->
-                            <i class="fas fa-angle-down text-sky text-2xl "></i>
-                        </div>
-                        <!-- Accordion Header End  -->
-                        <!-- Accordion Body Start  -->
-                        <div class="pb-12 border-b ">
-                            <!-- body content  -->
-                            <p class=" text-lg leading-normal capitalize mt-4 ">
-                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                demonstrate the visual form of a document or a typeface without relying on meaningful
-                                content. Lorem ipsum may be used as a placeholder before final copy is available. 
-                            </p>
-                        </div>
-                        <!-- Accordion Body End  -->
-                    </div>
-                    <!-- Accordion Pannel End  -->
-                    <!-- Accordion Pannel Start  -->
-                    <div class="relative overflow-hidden" >
-                        <!-- Accordion Header Start  -->
-                        <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
-                            <!-- Accordion Title  -->
-                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dpaste uppercase font-primary-regular ">Serving the community</h6>
-                            <!-- Accordion Icon  -->
-                            <i class="fas fa-angle-down text-dpaste text-2xl "></i>
-                        </div>
-                        <!-- Accordion Header End  -->
-                        <!-- Accordion Body Start  -->
-                        <div class="pb-12 border-b ">
-                            <!-- body content  -->
-                            <p class=" text-lg leading-normal capitalize mt-4 ">
-                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                demonstrate the visual form of a document or a typeface without relying on meaningful
-                                content. Lorem ipsum may be used as a placeholder before final copy is available. 
-                            </p>
-                        </div>
-                        <!-- Accordion Body End  -->
-                    </div>
-                    <!-- Accordion Pannel End  -->
-                    <!-- Accordion Pannel Start  -->
-                    <div class="relative overflow-hidden" >
-                        <!-- Accordion Header Start  -->
-                        <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" >
-                            <!-- Accordion Title  -->
-                            <h6 class="text-xl leading-normal md:text-3xl md:leading-7 text-dblue uppercase font-primary-regular "> Our Values </h6>
-                            <!-- Accordion Icon  -->
-                            <i class="fas fa-angle-down text-dblue text-2xl "></i>
-                        </div>
-                        <!-- Accordion Header End  -->
-                        <!-- Accordion Body Start  -->
-                        <div class="pb-12 border-b ">
-                            <!-- body content  -->
-                            <p class=" text-lg leading-normal capitalize mt-4 ">
-                                In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to
-                                demonstrate the visual form of a document or a typeface without relying on meaningful
-                                content. Lorem ipsum may be used as a placeholder before final copy is available. 
-                            </p>
-                        </div>
-                        <!-- Accordion Body End  -->
-                    </div>
-                    <!-- Accordion Pannel End  -->
                 </div>
                 <!-- Accordion end  -->
             </div>
@@ -209,7 +93,6 @@
                         <!-- Parent Circle Div End  -->
                     </div>
                 <!-- innovation chart Goes End   -->
-
             </div>
             <!-- right end  -->
             </div>
@@ -220,10 +103,47 @@
         </div>
     </div>
 </template>
+
 <script>
-    export default {
-        name: "Service",
-    };
+  import { ref } from 'vue';
+  export default {
+    name: "Service",
+    setup() {
+      let accordionList = ref([
+        {
+          id: 1,
+          title: 'Why We Exist ? ',
+          details: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. ',
+        },
+        {
+          id: 2,
+          title: 'Our Governance Practice',
+          details: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. ',
+        },
+        {
+          id: 3,
+          title: 'Serving the community',
+          details: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. ',
+        },
+        {
+          id: 4,
+          title: 'Our Values',
+          details: 'In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content. Lorem ipsum may be used as a placeholder before final copy is available. ',
+        },
+      ]);
+      let activeAccordion = ref(1)
+
+      const toggleAccordion = (accordionId) => {
+        activeAccordion.value = accordionId;
+      }
+
+      return {
+        accordionList,
+        toggleAccordion,
+        activeAccordion
+      };
+    },
+  };
 </script>
 <style lang="scss" >
 
