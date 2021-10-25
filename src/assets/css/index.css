@@ -63,3 +63,18 @@
     @apply max-w-screen-md  md:max-w-screen-2xl mx-auto px-4;
   }
 }
+
+@layer components {
+  .pagination-dot {
+    @apply h-6 w-6 rounded-full bg-gray-400 relative !mx-0;
+  }
+
+  .pagination-dot-tooltip {
+    @apply rotate-[-90deg] absolute bottom-12 -left-4 w-max;
+    /* @apply absolute bottom-12 -left-2;
+    transform: rotate(-90deg); */
+  }
+  .pagination-progress-fill {
+    @apply absolute rounded-3xl left-0 top-0 h-6 z-[-1] bg-indigo-400;
+  }
+}

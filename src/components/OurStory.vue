@@ -8,7 +8,46 @@
             <!-- story-slider-wrapper -->
             <div class="story-slider-wrapper">
               <!-- story-slider-item -->
-              <swiper :slides-per-view="1" :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" :navigation="{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }">
+                <!-- type: "progressbar", -->
+
+                <!-- renderCustom: function (swiper, current, total) {
+                  var customPaginationHtml = `<span class="swiper-pagination-customs">${current}, ${total}</span>`;
+                  return customPaginationHtml;
+                } -->
+              <swiper :slides-per-view="1" :pagination='{ 
+                el: ".pagination-progress",
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return `<div class="pagination-dot ${className}"><div class="pagination-dot-tooltip">2002-${index}</div></div>`;
+                },
+              }' :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" :navigation="{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }">
+                <swiper-slide>
+                  <div class="flex">
+                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
+                    <div>
+                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story</h3>
+                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="flex">
+                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
+                    <div>
+                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story 2</h3>
+                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
+                    </div>
+                  </div>
+                </swiper-slide>
+                <swiper-slide>
+                  <div class="flex">
+                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
+                    <div>
+                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story 3 </h3>
+                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
+                    </div>
+                  </div>
+                </swiper-slide>
                 <swiper-slide>
                   <div class="flex">
                     <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
@@ -48,37 +87,19 @@
                     </button>
                   </li>
                 </ul>
+                
+                <!-- slider-controller -->
+                <div id="current"></div>
+                
+                <div class="h-6 w-full bg-gray-200 rounded-3xl mt-24 relative z-0">
+                  <div class="pagination-progress-fill" :style="{ width: 'calc('+progress+'%' +' + 10px' }"></div>
+                  <div class="flex justify-between pagination-progress">
+                    <div class="pagination-dot">
+                      <div class="pagination-dot-tooltip">2002</div>
+                    </div>
+                  </div>
+                </div>
               </swiper>
-            </div>
-            <!-- story-slider-arrow -->
-            
-            <!-- slider-controller -->
-            <div class="h-6 w-full bg-gray-200 rounded-3xl mt-24 flex justify-between relative z-0">
-              <div class="absolute rounded-3xl left-0 top-0 h-6 z-[-1] bg-indigo-400 w-[15.5%]"></div>
-              <div class="h-6 w-6 rounded-full bg-indigo-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
-              <div class="h-6 w-6 rounded-full bg-gray-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
-              <div class="h-6 w-6 rounded-full bg-gray-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
-              <div class="h-6 w-6 rounded-full bg-gray-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
-              <div class="h-6 w-6 rounded-full bg-gray-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
-              <div class="h-6 w-6 rounded-full bg-gray-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
-              <div class="h-6 w-6 rounded-full bg-gray-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
-              <div class="h-6 w-6 rounded-full bg-gray-400 relative">
-                <div class="tooltip rotate-[-90deg] absolute bottom-12 -left-2">2002</div>
-              </div>
             </div>
           </div>
         </div>
@@ -87,12 +108,14 @@
 </template>
 
 <script>
+  import { ref, reactive } from 'vue';
   // import { Navigation } from 'swiper';
   import { Swiper, SwiperSlide } from 'swiper/vue';
   import 'swiper/css';
+  import "swiper/css/pagination"
 
-  import SwiperCore, { Navigation } from "swiper";
-  SwiperCore.use([Navigation]);
+  import SwiperCore, { Navigation, Pagination } from "swiper";
+  SwiperCore.use([Navigation, Pagination]);
 
   export default {
     components: {
@@ -100,17 +123,23 @@
       SwiperSlide,
     },
     setup() {
+      let progress = ref(0);
       const onSwiper = (swiper) => {
         console.log(swiper);
       };
 
-      const onSlideChange = () => {
-        console.log('slide change');
+      const onSlideChange = (swiper) => {
+        let total = swiper.slides.length -1;
+        let current = swiper.activeIndex
+
+        progress.value = (current / total) * 100;
+        console.log('calc('+progress+'%' +'- 100px')
       };
 
       return {
         onSwiper,
-        onSlideChange
+        onSlideChange,
+        progress
       };
     },
   };
