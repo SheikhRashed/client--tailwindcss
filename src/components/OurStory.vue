@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="relative py-[190px]">
+    <div class="relative py-16 lg:py-[190px]">
       <!-- Connect Wrapper  -->
         <div class="container">
           <!-- our-story-content -->
