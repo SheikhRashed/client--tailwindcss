@@ -21,60 +21,16 @@
                   return `<div class="pagination-dot ${className}"><div class="pagination-dot-tooltip">2002-${index}</div></div>`;
                 },
               }' :space-between="50" @swiper="onSwiper" @slideChange="onSlideChange" :navigation="{ nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' }">
-                <swiper-slide>
-                  <div class="flex">
-                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
-                    <div>
+                <swiper-slide v-for="slide in slides" :key="slide">
+                  <div class="flex flex-wrap md:flex-nowrap">
+                    <img src="../assets/images/story-image.jpg" class="max-w-full mr-0 md:mr-8 md:w-1/3 w-full" alt="">
+                    <div class="w-full md:w-auto">
                       <h3 class="text-8xl mb-8 font-primary-regular">Our Story</h3>
                       <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
                     </div>
                   </div>
                 </swiper-slide>
-                <swiper-slide>
-                  <div class="flex">
-                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
-                    <div>
-                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story 2</h3>
-                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
-                    </div>
-                  </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="flex">
-                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
-                    <div>
-                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story 3 </h3>
-                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
-                    </div>
-                  </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="flex">
-                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
-                    <div>
-                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story</h3>
-                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
-                    </div>
-                  </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="flex">
-                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
-                    <div>
-                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story 2</h3>
-                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
-                    </div>
-                  </div>
-                </swiper-slide>
-                <swiper-slide>
-                  <div class="flex">
-                    <img src="../assets/images/story-image.jpg" class="w-1/3 max-w-full mr-8" alt="">
-                    <div>
-                      <h3 class="text-8xl mb-8 font-primary-regular">Our Story 3 </h3>
-                      <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
-                    </div>
-                  </div>
-                </swiper-slide>
+
                 <ul class="m-0 flex justify-end mt-9">
                   <li>
                     <button type="button" class="w-10 h-10 flex items-center justify-center border text-gray-600 border-gray-600 mr-2 swiper-button-prev">
@@ -122,8 +78,10 @@
       SwiperSlide,
     },
     setup() {
-      let progress = ref(0);
+      let progress = ref(0)
       let dotsWidth = ref(0)
+      let slides = ref([1,2,3,4,5,6,7])
+
       const onSwiper = (swiper) => {
         console.log(swiper);
       };
@@ -142,7 +100,8 @@
         onSwiper,
         onSlideChange,
         progress,
-        dotsWidth
+        dotsWidth,
+        slides
       };
     },
   };
