@@ -90,9 +90,8 @@
                 
                 <!-- slider-controller -->
                 <div id="current"></div>
-                
                 <div class="h-6 w-full bg-gray-200 rounded-3xl mt-24 relative z-0">
-                  <div class="pagination-progress-fill" :style="{ width: 'calc('+progress+'%' +' + 10px' }"></div>
+                  <div class="pagination-progress-fill" :style="{ width: 'calc('+progress+'%'  }"></div>
                   <div class="flex justify-between pagination-progress">
                     <div class="pagination-dot">
                       <div class="pagination-dot-tooltip">2002</div>
@@ -124,6 +123,7 @@
     },
     setup() {
       let progress = ref(0);
+      let dotsWidth = ref(0)
       const onSwiper = (swiper) => {
         console.log(swiper);
       };
@@ -131,6 +131,8 @@
       const onSlideChange = (swiper) => {
         let total = swiper.slides.length -1;
         let current = swiper.activeIndex
+        // remove total dots width
+        dotsWidth.value = (current * 24);
 
         progress.value = (current / total) * 100;
         console.log('calc('+progress+'%' +'- 100px')
@@ -139,7 +141,8 @@
       return {
         onSwiper,
         onSlideChange,
-        progress
+        progress,
+        dotsWidth
       };
     },
   };
