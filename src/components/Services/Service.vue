@@ -48,7 +48,7 @@
                             <!-- blue border start  -->
                             <div class=" absolute top-1/2 left-1/2  rounded-full w-0 h-0 md:w-2xl  md:h-2xl  lg:w-2xl lg:h-2xl  border-2 border-primary transform -translate-x-1/2 -translate-y-1/2  bg-white " >
                                 <!-- service start -->
-                                <div class="bg-spaste w-md h-md  sm:w-xl sm:h-xl rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  -rotate-90 flex flex-col justify-between items-center">
+                                <div class="infinite-roate bg-spaste w-md h-md  sm:w-xl sm:h-xl rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  -rotate-90 flex flex-col justify-between items-center">
                                 <h2 class=" text-sm  md:text-lg leading-none md:leading-5  text-white uppercase font-secondary-bold mt-3"> Platform </h2>
                                     <!-- white border start  -->
                                     <div class="bg-white w-0 lg:w-lg h-0 lg:h-lg rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " >
