@@ -44,62 +44,55 @@
 <script>
 
 // import Team from '../../s'
-
 import Profile from '../Profile/Profile.vue';
 
-
 export default {
-    name: 'Team',
-    components: { 
-        Profile,
-    },
-        data() { 
-        return { 
-            
-    listofPeople: [
-              {
-                  id: 1,
-               
-                  img: 'https://images.pexels.com/photos/64385/pexels-photo-64385.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-                  name: 'Katy Lin',
-                  designation: 'Chief Executive  Officer',
-              },
-              {
-                  id: 2,
-                  img: 'https://images.pexels.com/photos/1161668/pexels-photo-1161668.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-                  name: 'Katy Lin',
-                  designation: 'Chief Executive  Officer',
-              },
-
-          ],
-    listofMember: [
-                      {
-                  id: 1,
-                  img: 'https://images.pexels.com/photos/6275786/pexels-photo-6275786.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-                  name: 'Katy Lin',
-                  designation: 'Technology Director',
-              },
-              {
-                  id: 2,
-                  img: 'https://images.pexels.com/photos/5060991/pexels-photo-5060991.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-                  name: 'Katy Lin',
-                  designation: 'Finance Director',
-              },
-              {
-                  id: 3,
-                    img: 'https://images.pexels.com/photos/4098283/pexels-photo-4098283.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-                  name: 'Katy Lin',
-                  designation: 'Development Director Global',
-              },
-              {
-                  id: 4,
-                  img: 'https://images.pexels.com/photos/1040882/pexels-photo-1040882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-                  name: 'Katy Lin',
-                  designation: 'Chief Technology & Fintech Advisor',
-              },
-    ]
-        }
+  name: 'Team',
+  components: {
+    Profile,
+  },
+  data() {
+    return {
+      listofPeople: [{
+          id: 1,
+          img: '1.png',
+          name: 'Katy Lin',
+          designation: 'Chief Executive  Officer',
+        },
+        {
+          id: 2,
+          img: '2.png',
+          name: 'Katy Lin',
+          designation: 'Chief Executive  Officer',
+        },
+      ],
+      listofMember: [{
+          id: 1,
+          img: '3.png',
+          name: 'Katy Lin',
+          designation: 'Technology Director',
+        },
+        {
+          id: 2,
+          img: '4.png',
+          name: 'Katy Lin',
+          designation: 'Finance Director',
+        },
+        {
+          id: 3,
+          img: '5.png',
+          name: 'Katy Lin',
+          designation: 'Development Director Global',
+        },
+        {
+          id: 4,
+          img: '6.png',
+          name: 'Katy Lin',
+          designation: 'Chief Technology & Fintech Advisor',
+        },
+      ]
     }
+  }
 }
 </script>
 <style lang="">
