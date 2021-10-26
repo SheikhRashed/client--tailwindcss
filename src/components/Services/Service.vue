@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="relative py-16 lg:py-24">
+    <div class="relative py-2 lg:py-16 lg:py-24">
         <div class="container ">
         <!-- Service Wrapper Start  -->
             <div class="flex flex-col  xl:flex-row items-center" >
@@ -16,7 +16,7 @@
                     <!-- Accordion Pannel Start  -->
                     <div class="relative overflow-hidden" v-for="item in accordionList" :key="item.id">
                         <!-- Accordion Header Start  -->
-                        <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" @click.prevent="toggleAccordion(item.id)">
+                        <div class="flex items-center justify-between py-6 lg:py-10 pr-6 border-t border-b cursor-pointer" @click.prevent="toggleAccordion(item.id)">
                             <!-- Accordion Title  -->
                             <h6 class=" text-xl leading-normal md:text-[38px] md:leading-none text-primary uppercase font-primary-regular ">{{ item.title }} </h6>
                             <!-- Accordion Icon  -->
@@ -29,7 +29,7 @@
                         <!-- Accordion Body Start  -->
                         <div class="pb-12 border-b" :class="activeAccordion == item.id ? 'block' : 'hidden'">
                             <!-- body content  -->
-                            <p class=" text-[24px] leading-normal capitalize mt-4 font-secondary-regular ">
+                            <p class=" text-lg md:text-[24px] leading-normal capitalize mt-4 font-secondary-regular ">
                               {{ item.details }}
                             </p>
                         </div>

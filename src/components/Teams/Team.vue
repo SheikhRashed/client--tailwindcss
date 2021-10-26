@@ -1,12 +1,12 @@
 <template lang="">
-    <div class="relative py-16 lg:py-24 ">
+    <div class="relative pt-0 pb-10 md:py-16 lg:py-24 ">
         <!-- team wrapper start   -->
         <div class="container">
             <!-- Top start  -->
             <div class="flex justify-between flex-col lg:flex-row items-center">
                 <!-- left start -->
                 <div class=" lg:w-2/4 text-center lg:text-left">
-                    <h2 class=" text-5xl  md:text-[122px] leading-tight  text-gray-800 capitalize  font-primary-medium " >Leading <br class="hidden lg:block">  the way</h2>
+                    <h2 class=" text-5xl  lg:text-[122px] leading-tight  text-gray-800 capitalize  font-primary-medium " >Leading <br class="hidden lg:block">  the way</h2>
                     <p class=" text-lg  md:text-[26px] leading-normal  my-8   lg:my-24 text-gray-800 font-secondary-regular  lg:max-w-2xl" >
                         In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
                     </p>

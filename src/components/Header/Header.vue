@@ -1,5 +1,5 @@
 <template lang="">
-    <header class="relative  bg-white pt-8 pb-16  z-50 " :class="{ 'scrolled-nav ': scrolledNav}">
+    <header class="relative  bg-white pt-8 pb-8 md:pb-16  z-50 " :class="{ 'scrolled-nav ': scrolledNav}">
         <!-- Container  -->
         <nav class="container flex justify-between items-center">
             <!-- left content   -->
