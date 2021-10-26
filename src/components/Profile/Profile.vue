@@ -9,10 +9,10 @@
         <!-- About start  -->
         <div class="text-center">
         <!-- name start  -->
-        <h6 class="text-primary text-3xl leading-7 capitalize mb-4" >{{profile.name}}</h6>
+        <h6 class="text-primary text-3xl  lg:text-[40px] leading-normal capitalize lg:mb-4 font-primary-regular " >{{profile.name}}</h6>
         <!-- name end  -->
         <!-- Designation start  -->
-        <p class="text-2xl  leading-9 text-gray-800">{{profile.designation}} </p>
+        <p class=" text-xl lg:text-[32px]  lg:leading-normal text-gray-800  font-secondary-ebold ] ">{{profile.designation}} </p>
         <!-- Designation end  -->
         </div>
         <!-- About end  -->

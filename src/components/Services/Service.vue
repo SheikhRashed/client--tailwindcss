@@ -6,9 +6,9 @@
             <!-- left start  -->
             <div class=" mb-20 lg:mb-0  xl:mr-12 " >
                 <!-- Service Info start  -->
-                <h6 class="text-2xl lg:text-5xl leading-none lg:leading-10 mb-5 font-secondary-regular capitalize">You need transparency</h6>
-                <h2 class=" text-4xl lg:text-6xl leading-none mb-3 font-primary-regular uppercase  ">We've got you covered</h2>
-                <p class="font-secondary-regular text-lg lg:text-xl leading-none lg:leading-7 capitalize mb-8 lg:mb-16 " >in publishing and grapich design, lorem ipsum is a placeholder text commonly used to demonstrate</p>
+                <h6 class="text-2xl lg:text-[60px] leading-none lg:leading-normal font-secondary-regular lowercase ">You need transparency</h6>
+                <h2 class=" text-4xl lg:text-[80px] leading-normal mb-3 font-primary-regular uppercase  ">We've got you covered</h2>
+                <p class="font-secondary-regular text-lg lg:text-[26px] leading-none lg:leading-normal capitalize mb-8 lg:mb-8 " >in publishing and grapich design, lorem ipsum is a placeholder text commonly used to demonstrate</p>
                 <!-- Service Info End  -->
 
                 <!-- Accordion start  -->
@@ -18,9 +18,8 @@
                         <!-- Accordion Header Start  -->
                         <div class="flex items-center justify-between py-10 pr-6 border-t border-b cursor-pointer" @click.prevent="toggleAccordion(item.id)">
                             <!-- Accordion Title  -->
-                            <h6 class=" text-xl leading-normal md:text-3xl md:leading-7 text-primary uppercase font-primary-regular ">{{ item.title }} </h6>
+                            <h6 class=" text-xl leading-normal md:text-[38px] md:leading-none text-primary uppercase font-primary-regular ">{{ item.title }} </h6>
                             <!-- Accordion Icon  -->
-                            <!-- <i class="fas fa-angle-down text-primary text-2xl "></i> -->
                             <div class="text-primary text-2xl">
                               <svg v-if="activeAccordion == item.id" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="18 15 12 9 6 15"></polyline></svg>
                               <svg v-else viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
@@ -30,7 +29,7 @@
                         <!-- Accordion Body Start  -->
                         <div class="pb-12 border-b" :class="activeAccordion == item.id ? 'block' : 'hidden'">
                             <!-- body content  -->
-                            <p class=" text-lg leading-normal capitalize mt-4 ">
+                            <p class=" text-[24px] leading-normal capitalize mt-4 font-secondary-regular ">
                               {{ item.details }}
                             </p>
                         </div>
@@ -102,7 +101,7 @@
             </div>
         <!-- Service Wrapper End  -->
         <div class=" mt-16 md:mt-24" >
-        <a href="#" class="flex justify-center  items-center text-xl md:text-2xl leading-6 capitalize text-gray-800"><span class="mt-1 mr-4"><i class="far fa-arrow-alt-circle-right"></i></span> See full list of activities and top skills </a>
+        <a href="#" class="flex justify-center  items-center text-xl md:text-[32px] leading-none capitalize text-gray-800 font-primary-medium"><span class="mt-1 mr-4"><i class="far fa-arrow-alt-circle-right"></i></span> See full list of activities and top skills </a>
         </div>
         </div>
     </div>

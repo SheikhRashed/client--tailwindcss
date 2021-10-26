@@ -26,6 +26,10 @@
 }
 
 @font-face {
+  font-family: 'Urban-Light';
+  src: url('../src/assets/fonts/Urbanist-Light.ttf');
+}
+@font-face {
   font-family: 'Urban-Regular';
   src: url('../src/assets/fonts/Urbanist-Regular.ttf');
 }
@@ -39,6 +43,10 @@
   font-family: 'Urban-Bold';
   src: url('../src/assets/fonts/Urbanist-Bold.ttf');
 }
+@font-face {
+  font-family: 'Urban-EBold';
+  src: url('../src/assets/fonts/Urbanist-ExtraBold.ttf');
+}
 
 @tailwind base;
 @tailwind components;
@@ -48,13 +56,24 @@
   .btn {
     @apply inline-block
         py-2
-        px-8  uppercase  font-primary-medium border-2 border-transparent text-center whitespace-nowrap overflow-hidden;
+        px-8  uppercase  font-primary-regular border-2 border-transparent text-center whitespace-nowrap overflow-hidden;
   }
   .btn-primary {
     @apply bg-primary text-white;
   }
   .btn-outline {
     @apply bg-transparent text-primary  border-primary;
+  }
+
+  .pagination-dot {
+    @apply h-6 w-6 rounded-full bg-gray-400 relative !mx-0;
+  }
+
+  .pagination-dot-tooltip {
+    @apply rotate-[-90deg] absolute bottom-12 -left-5 w-max text-[16px] font-semibold font-primary-regular;
+  }
+  .pagination-progress-fill {
+    @apply absolute rounded-3xl left-0 top-0 h-6 z-[-1] bg-indigo-400;
   }
 }
 
@@ -64,33 +83,25 @@
   }
 }
 
-@layer components {
-  .pagination-dot {
-    @apply h-6 w-6 rounded-full bg-gray-400 relative !mx-0;
-  }
-
-  .pagination-dot-tooltip {
-    @apply rotate-[-90deg] absolute bottom-12 -left-4 w-max;
-    /* @apply absolute bottom-12 -left-2;
-    transform: rotate(-90deg); */
-  }
-  .pagination-progress-fill {
-    @apply absolute rounded-3xl left-0 top-0 h-6 z-[-1] bg-indigo-400;
-  }
-}
-
-
 .infinite-roate {
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

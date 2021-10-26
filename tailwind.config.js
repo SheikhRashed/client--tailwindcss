@@ -21,15 +21,20 @@ module.exports = {
         'primary-regular': 'Satoshi-Regular',
         'primary-medium': 'Satoshi-Medium',
         'primary-bold': 'Satoshi-Bold',
+        'secondary-light': 'Urban-Light',
         'secondary-regular': 'Urban-Regular',
         'secondary-sb': 'Urban-SemiBold',
         'secondary-bold': 'Urban-Bold',
+        'secondary-ebold': 'Urban-EBold',
         logo: 'Arial',
       },
 
       fontSize: {
-        brandLogo: ['38.94px', '38.94px'],
+        brandLogo: ['50px', '58.94px'],
         menu: ['18px', '18px'],
+        bannerHeading: '146px',
+        bannerSubHeading: '64px',
+        bannerText: '60px',
       },
       spacing: {
         '3xl': '740px',
