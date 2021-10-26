@@ -18,6 +18,12 @@
   <Team/>
   <!-- Team Section End  -->
 
+  <!-- Blue Border start  -->
+  <div class=" py-2 lg:py-8 my-14 lg:my-28 bg-primary">
+  </div>
+  <!-- Blue Border end   -->
+
+
   <!-- Connect Section start  -->
   <Connect/>
   <!-- Connect Section end -->
