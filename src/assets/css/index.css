@@ -73,7 +73,7 @@
     @apply rotate-[-90deg] absolute bottom-12 -left-5 w-max text-[16px] font-semibold font-primary-regular;
   }
   .pagination-progress-fill {
-    @apply absolute rounded-3xl left-0 top-0 h-6 z-[-1] bg-indigo-400;
+    @apply absolute rounded-3xl rounded-tr-xl rounded-br-xl left-0 top-0 h-6 z-[-1] bg-indigo-400;
   }
 }
 

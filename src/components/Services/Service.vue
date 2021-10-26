@@ -101,7 +101,10 @@
             </div>
         <!-- Service Wrapper End  -->
         <div class=" mt-16 md:mt-24" >
-        <a href="#" class="flex justify-center  items-center text-xl md:text-[32px] leading-none capitalize text-gray-800 font-primary-medium"><span class="mt-1 mr-4"><i class="far fa-arrow-alt-circle-right"></i></span> See full list of activities and top skills </a>
+        <a href="#" class="flex justify-center  items-center text-xl md:text-[32px] leading-none capitalize text-gray-800 font-primary-medium">
+          <span class="mt-1 mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right-circle"><circle cx="12" cy="12" r="10"></circle><polyline points="12 16 16 12 12 8"></polyline><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+          </span> See full list of activities and top skills </a>
         </div>
         </div>
     </div>
