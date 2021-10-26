@@ -46,9 +46,13 @@
               <!-- Innovation chart start  -->
               <div>
                 <!-- parent chart   -->
-                <div class="bg-parent-chart w-sm h-sm   lg:w-3xl  lg:h-3xl  bg-contain  bg-center bg-no-repeat animate-spin duration-3000">
-
+                <div class="bg-parent-chart w-sm h-sm   lg:w-3xl  lg:h-3xl  bg-contain  bg-center bg-no-repeat  duration-3000">
                 </div>
+                <div class="bg-child-chart w-sm h-sm   lg:w-3xl  lg:h-3xl  bg-contain  bg-center bg-no-repeat animate-spin duration-3000">
+                </div>
+                <div class="bg-child-chart-1 w-sm h-sm   lg:w-3xl  lg:h-3xl  bg-contain  bg-center bg-no-repeat animate-spin duration-3000">
+                </div>
+
               </div>
               <!-- Innovation chart end  -->
 

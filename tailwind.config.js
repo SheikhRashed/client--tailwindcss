@@ -7,6 +7,8 @@ module.exports = {
       backgroundImage: {
         'hero-pattern': "url('src/assets/images/first_section.jpg')",
         'parent-chart': "url('src/assets/images/parent.png')",
+        'child-chart': "url('src/assets/images/child-1.png')",
+        'child-chart-1': "url('src/assets/images/child-2.png')",
       },
       colors: {
         primary: '#8F98FF',
