@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="bg-footer py-20">
+    <div class="bg-footer py-10 lg:py-20">
         <div class="container flex justify-between flex-col xl:flex-row ">
             <!-- Left content  -->
             <div class="w-full xl:max-w-3xl mr-4 xl:mr-6 order-2 lg:order-1">
@@ -34,7 +34,7 @@
                     <p class="text-[10px] leading-normal capitalize text-white text-opacity-40  md:max-w-xl my-8 font-primary-medium ">COMPANY REFERS TO THE GLOBAL PLATFORM, AND MAY REFER TO ONE OR MORE LICENSED COMPANIES, EACH OF WHICH IS A SEPARATE LEGAL ENTITY. COMPANY BRAND AND TECHNOLOGY IS OWNED BY COMPANY NO. 123456</p>
                     <!-- privacy Brif end  -->
                     <!-- Copy right Text  -->
-                    <p class="text-[10px] uppercase text-white text-opacity-40 mb-10 xl:mb-0 font-primary-medium "> company &copy; all rights reserved 2021</p>
+                    <p class="text-[10px] uppercase text-white text-opacity-40 sm:mb-10 xl:mb-0 font-primary-medium "> company &copy; all rights reserved 2021</p>
                     <!-- Copy right Text  -->
                 </div>
                 <!-- left top end   -->
