@@ -1,6 +1,5 @@
-<template lang="">
-
-    <div class="relative bg-footer py-36">
+<template>
+    <div class="relative bg-footer py-36 bg-hero-pattern bg-cover bg-center bg-no-repeat">
         <!-- Banner wrapper Start -->
         <div class="container">
             <!-- Banner text Content start -->
@@ -15,9 +14,6 @@
         </div>
         <!-- Banner wrapper End -->
     </div>
-
-
-   
 </template>
 <script>
 export default {

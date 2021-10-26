@@ -20,7 +20,11 @@
                             <!-- Accordion Title  -->
                             <h6 class=" text-xl leading-normal md:text-3xl md:leading-7 text-primary uppercase font-primary-regular ">{{ item.title }} </h6>
                             <!-- Accordion Icon  -->
-                            <i class="fas fa-angle-down text-primary text-2xl "></i>
+                            <!-- <i class="fas fa-angle-down text-primary text-2xl "></i> -->
+                            <div class="text-primary text-2xl">
+                              <svg v-if="activeAccordion == item.id" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="18 15 12 9 6 15"></polyline></svg>
+                              <svg v-else viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><polyline points="6 9 12 15 18 9"></polyline></svg>
+                            </div>
                         </div>
                         <!-- Accordion Header End  -->
                         <!-- Accordion Body Start  -->
@@ -48,7 +52,7 @@
                             <!-- blue border start  -->
                             <div class=" absolute top-1/2 left-1/2  rounded-full w-0 h-0 md:w-2xl  md:h-2xl  lg:w-2xl lg:h-2xl  border-2 border-primary transform -translate-x-1/2 -translate-y-1/2  bg-white " >
                                 <!-- service start -->
-                                <div class="infinite-roate bg-spaste w-md h-md  sm:w-xl sm:h-xl rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  -rotate-90 flex flex-col justify-between items-center">
+                                <div class="bg-spaste w-md h-md  sm:w-xl sm:h-xl rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2  -rotate-90 flex flex-col justify-between items-center">
                                 <h2 class=" text-sm  md:text-lg leading-none md:leading-5  text-white uppercase font-secondary-bold mt-3"> Platform </h2>
                                     <!-- white border start  -->
                                     <div class="bg-white w-0 lg:w-lg h-0 lg:h-lg rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 " >

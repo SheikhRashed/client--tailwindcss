@@ -4,6 +4,9 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: {
+        'hero-pattern': "url('src/assets/images/first_section.jpg')",
+      },
       colors: {
         primary: '#8F98FF',
         footer: '#24243C',
