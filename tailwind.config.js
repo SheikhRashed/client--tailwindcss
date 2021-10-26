@@ -52,7 +52,8 @@ module.exports = {
         xxxxs: '90px',
       },
       transitionDuration: {
-        3000: '30000s',
+        0: '0ms',
+        2000: '2000ms',
       },
     },
   },
