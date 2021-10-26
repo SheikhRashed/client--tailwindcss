@@ -6,6 +6,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         'hero-pattern': "url('src/assets/images/first_section.jpg')",
+        'parent-chart': "url('src/assets/images/parent.png')",
       },
       colors: {
         primary: '#8F98FF',
@@ -47,6 +48,9 @@ module.exports = {
         xxs: '190px',
         xxxs: '160px',
         xxxxs: '90px',
+      },
+      transitionDuration: {
+        3000: '30000s',
       },
     },
   },

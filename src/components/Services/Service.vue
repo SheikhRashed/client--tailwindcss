@@ -43,8 +43,18 @@
             <!-- right start  -->
             <div class="mt-2 lg:mt-28 xl:mt-0" >
 
+              <!-- Innovation chart start  -->
+              <div>
+                <!-- parent chart   -->
+                <div class="bg-parent-chart w-sm h-sm   lg:w-3xl  lg:h-3xl  bg-contain  bg-center bg-no-repeat animate-spin duration-3000">
+
+                </div>
+              </div>
+              <!-- Innovation chart end  -->
+
+
                 <!-- innovation chart Goes Here   -->
-                    <div class="relative">
+                    <div class="relative hidden">
                         <!-- Parent Circle Div Start -->
                         <div class=" relative bg-white w-lg h-lg sm:w-xl sm:h-xl md:w-2xl md:h-2xl  lg:w-3xl lg:h-3xl flex justify-between  items-center rounded-full transform rotate-90">
                             <h2 class="transform -rotate-90 text-2xl sm:text-3xl  leading-normal font-primary-regular  uppercase tracking-widest   -mx-24 sm:-mx-36 md:-mx-36 lg:-mx-24">Compliance</h2>
