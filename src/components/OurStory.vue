@@ -8,12 +8,7 @@
             <!-- story-slider-wrapper -->
             <div class="story-slider-wrapper">
               <!-- story-slider-item -->
-                <!-- type: "progressbar", -->
 
-                <!-- renderCustom: function (swiper, current, total) {
-                  var customPaginationHtml = `<span class="swiper-pagination-customs">${current}, ${total}</span>`;
-                  return customPaginationHtml;
-                } -->
                 <swiper :slides-per-view="1" :pagination='{ 
                   el: ".pagination-progress",
                   clickable: true,
@@ -24,9 +19,9 @@
                   <swiper-slide v-for="slide in slides" :key="slide">
                     <div class="flex flex-wrap md:flex-nowrap">
                       <img src="../assets/images/banner.png" class="max-w-full mr-0 md:mr-8 md:w-1/3 w-full" alt="">
-                      <div class="w-full md:w-auto">
-                        <h3 class="text-8xl mb-8 font-primary-regular">Our Story</h3>
-                        <p class="text-3xl leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
+                      <div class="w-full md:w-auto mt-8 md:mt-0">
+                        <h3 class=" text-4xl lg:text-8xl mb-4 lg:mb-8 font-primary-regular">Our Story</h3>
+                        <p class=" text-xl lg:text-3xl leading-normal lg:leading-10 font-primary-medium tracking-wider">In publishing and graphic design, Lorem ipsum is a <br/> placeholder text commonly used to demonstrate the visual.</p>
                       </div>
                     </div>
                   </swiper-slide>
