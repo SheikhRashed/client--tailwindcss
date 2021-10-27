@@ -2,50 +2,50 @@
 
 @font-face {
   font-family: 'Satoshi-Regular';
-  src: url('../src/assets/fonts/Satoshi-Black.otf');
+  src: url('../../src/assets/fonts/Satoshi-Black.otf');
 }
 
 @font-face {
   font-family: 'Satoshi-Medium';
-  src: url('../src/assets/fonts/Satoshi-Medium.otf');
+  src: url('../../src/assets/fonts/Satoshi-Medium.otf');
 }
 
 @font-face {
   font-family: 'Satoshi-Bold';
-  src: url('../src/assets/fonts/Satoshi-Bold.otf');
+  src: url('../../src/assets/fonts/Satoshi-Bold.otf');
 }
 
 @font-face {
   font-family: 'Arial';
-  src: url('../src/assets/fonts/arial.ttf');
+  src: url('../../src/assets/fonts/arial.ttf');
 }
 
 @font-face {
   font-family: 'Arial';
-  src: url('../src/assets/fonts/arial.ttf');
+  src: url('../../src/assets/fonts/arial.ttf');
 }
 
 @font-face {
   font-family: 'Urban-Light';
-  src: url('../src/assets/fonts/Urbanist-Light.ttf');
+  src: url('../../src/assets/fonts/Urbanist-Light.ttf');
 }
 @font-face {
   font-family: 'Urban-Regular';
-  src: url('../src/assets/fonts/Urbanist-Regular.ttf');
+  src: url('../../src/assets/fonts/Urbanist-Regular.ttf');
 }
 
 @font-face {
   font-family: 'Urban-SemiBold';
-  src: url('../src/assets/fonts/Urbanist-SemiBold.ttf');
+  src: url('../../src/assets/fonts/Urbanist-SemiBold.ttf');
 }
 
 @font-face {
   font-family: 'Urban-Bold';
-  src: url('../src/assets/fonts/Urbanist-Bold.ttf');
+  src: url('../../src/assets/fonts/Urbanist-Bold.ttf');
 }
 @font-face {
   font-family: 'Urban-EBold';
-  src: url('../src/assets/fonts/Urbanist-ExtraBold.ttf');
+  src: url('../../src/assets/fonts/Urbanist-ExtraBold.ttf');
 }
 
 @tailwind base;
