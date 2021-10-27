@@ -3,15 +3,15 @@
         <!-- Connect Wrapper  -->
         <div class="container">
             <!-- top start   -->
-            <div class="flex justify-between flex-col lg:flex-row mb-8 md:mb-10 xl:mb-20">
+            <div class="flex justify-between flex-col xl:flex-row mb-8 md:mb-10 xl:mb-20">
                 <!-- left start  -->
-                <div class="  ">
-                    <h6 class="text-lg xl:text-[40px] leading-normal uppercase font-secondary-light text-gray-800">Got a question on complance?</h6>
-                    <h2 class="text-5xl xl:text-8xl leading-normal capitalize font-primary-medium">Let's connect!</h2>
+                <div>
+                    <h6 class="text-lg md:text-xl xl:text-[40px] leading-normal uppercase font-secondary-light text-gray-800 whitespace-nowrap ">Got a question on complance?</h6>
+                    <h2 class="text-5xl md: text-6xl xl:text-8xl leading-normal capitalize font-primary-medium">Let's connect!</h2>
                 </div>
                 <!-- left end  -->
                 <!-- right start  -->
-                <div class=" ">
+                <div class=" xl:w-3xl  xl:ml-32 ">
                     <p class="text-lg xl:text-[24px] leading-normal capitalize text-gray-800 mb-6 xl:mb-10 font-secondary-regular max-w-3xl">Get in touch will our team who would be happy to help you get started</p>
                     <a href="#" class="flex items-center text-xl md:text-2xl leading-6 capitalize text-gray-800 -ml-2 font-primary-medium">
                         <span class="mt-1 mr-4">
@@ -43,20 +43,20 @@
             <div>
                 <form action="#">
                     <!-- Form Input Content Start -->
-                    <div class="flex justify-between flex-col md:flex-row">
+                    <div class="flex justify-between flex-col xl:flex-row">
                         <!-- left start  -->
-                        <div class="md:w-1/2 md:mr-12">
+                        <div class="w-full xl:w-1/3 md:ml-auto  md:mr-12">
                             <div class="w-full mb-11">
                                 <input type="text" placeholder="Full Name *" required class="border border-gray-900 py-5 pl-6 w-full rounded" />
                             </div>
-                            <div class="w-full mb-11 md:mb-0">
+                            <div class="w-full mb-11 xl:mb-0">
                                 <input type="text" placeholder="Company Name *" required class="border border-gray-900 py-5 pl-6 w-full rounded" />
                             </div>
                         </div>
                         <!-- left end  -->
 
                         <!-- Right start -->
-                        <div class="md:w-1/2">
+                        <div class="xl:w-1/2">
                             <div class="w-full mb-11">
                                 <input type="email" placeholder="Work email *" required class="border border-gray-900 py-5 pl-6 w-full rounded" />
                             </div>
@@ -66,7 +66,7 @@
                             <div class="w-full">
                                 <input type="text" placeholder="I am looking to hire * " required class="border border-gray-900 py-5 pl-6 w-full rounded" />
                             </div>
-                            <button class="btn btn-primary mt-12 md:mt-28 w-full md:w-56">Submit</button>
+                            <button class="btn btn-primary mt-12 lg:mt-28 w-full md:w-56">Submit</button>
                         </div>
                         <!-- Right end -->
 
