@@ -3,7 +3,7 @@
     <div class="relative overflow-hidden ">
         <!-- Img start -->
         <div class=" w-full h-80 relative overflow-hidden mb-6 ">
-            <img :src="`/assets/images/${profile.img}`" class="w-full h-full object-cover ">
+            <img :src="`./assets/images/${profile.img}`" class="w-full h-full object-cover ">
         </div>
         <!-- Img end  -->
         <!-- About start  -->
