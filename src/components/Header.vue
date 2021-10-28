@@ -68,7 +68,7 @@
 </template>
 <script>
 
-import Sidebar from '../Sidebar/Sidebar.vue';
+import Sidebar from './Sidebar.vue';
 
     export default {
         name: "Header",

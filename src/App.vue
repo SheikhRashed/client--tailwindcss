@@ -1,46 +1,37 @@
 <template>
   <!-- Header Section Start  -->
-    <Header />
-  <!-- Header Section End -->
+  <Header />
 
   <!-- Banner Section Start  -->
-      <Banner/>
-  <!-- Banner Section End  -->
+  <Banner/>
 
   <!-- Our Story  -->
   <our-story />
 
   <!-- Service Section Start  -->
-    <Service/>
-  <!-- Service Section End  -->
+  <Service/>
  
   <!-- Team Section Start  -->
   <Team/>
-  <!-- Team Section End  -->
 
   <!-- Blue Border start  -->
   <div class=" py-2 lg:py-8 my-14 lg:my-28 bg-primary">
   </div>
-  <!-- Blue Border end   -->
-
 
   <!-- Connect Section start  -->
   <Connect/>
-  <!-- Connect Section end -->
 
   <!-- footer section start  -->
   <Footer />
-  <!-- footer section  end -->
 </template>
 
 <script>
-  import Header from './components/Header/Header.vue';
-  import Banner from './components/Banner/Banner.vue';
-  import Service from './components/Services/Service.vue';
-  import About from './pages/About/About.vue';
-  import Connect from './components/Connects/Connect.vue';
-  import Team from './components/Teams/Team.vue';
-  import Footer from './components/Footer/Footer.vue';
+  import Header from './components/Header.vue';
+  import Banner from './components/Banner.vue';
+  import Service from './components/Service.vue';
+  import Connect from './components/Connect.vue';
+  import Team from './components/Team.vue';
+  import Footer from './components/Footer.vue';
   import OurStory from './components/OurStory.vue';
   
   export default {
@@ -50,7 +41,6 @@
       Banner,
       Service,
       Footer,
-      About,
       Team,
       Connect,
       OurStory,

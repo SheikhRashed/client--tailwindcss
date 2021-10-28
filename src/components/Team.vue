@@ -44,7 +44,7 @@
 <script>
 
 // import Team from '../../s'
-import Profile from '../Profile/Profile.vue';
+import Profile from './Profile.vue';
 
 export default {
   name: 'Team',
@@ -55,38 +55,38 @@ export default {
     return {
       listofPeople: [{
           id: 1,
-          img: 'user-1.png',
+          img: 'https://i.ibb.co/Hxg8yL9/user-1.png',
           name: 'Katy Lin',
           designation: 'Chief Executive  Officer',
         },
         {
           id: 2,
-          img: 'user-2.png',
+          img: 'https://i.ibb.co/Jp14xmh/user-2.png',
           name: 'Katy Lin',
           designation: 'Chief Executive  Officer',
         },
       ],
       listofMember: [{
           id: 1,
-          img: 'user-3.png',
+          img: 'https://i.ibb.co/xzDwCbr/user-3.png',
           name: 'Katy Lin',
           designation: 'Technology Director',
         },
         {
           id: 2,
-          img: 'user-4.png',
+          img: 'https://i.ibb.co/1ZwbFyY/user-4.png',
           name: 'Katy Lin',
           designation: 'Finance Director',
         },
         {
           id: 3,
-          img: 'user-5.png',
+          img: 'https://i.ibb.co/6W2TnV4/user-5.png',
           name: 'Katy Lin',
           designation: 'Development Director Global',
         },
         {
           id: 4,
-          img: 'user-6.png',
+          img: 'https://i.ibb.co/1RYtGJD/user-6.png',
           name: 'Katy Lin',
           designation: 'Chief Technology & Fintech Advisor',
         },
