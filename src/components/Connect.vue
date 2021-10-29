@@ -7,7 +7,7 @@
                 <!-- left start  -->
                 <div>
                     <h6 class="text-lg md:text-xl xl:text-[40px] leading-normal uppercase font-secondary-light text-gray-800 whitespace-nowrap ">Got a question on complance?</h6>
-                    <h2 class="text-5xl md: text-6xl xl:text-8xl leading-normal capitalize font-primary-medium">Let's connect!</h2>
+                    <h2 class="text-5xl md:text-6xl xl:text-8xl leading-normal capitalize font-primary-medium">Let's connect!</h2>
                 </div>
                 <!-- left end  -->
                 <!-- right start  -->

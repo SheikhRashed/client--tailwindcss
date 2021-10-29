@@ -1,5 +1,5 @@
 <template lang="">
-    <div class="relative py-2 lg:py-16 lg:py-24">
+    <div class="relative py-2 md:py-16 lg:py-24">
         <div class="container ">
         <!-- Service Wrapper Start  -->
             <div class="flex flex-col  xl:flex-row items-center" >
